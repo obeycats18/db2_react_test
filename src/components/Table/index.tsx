@@ -15,7 +15,7 @@ type TablesPropsT = {
 const _Table: React.FC<TablesPropsT> = ({columns, dataSource}) => {
 
 
-    return <Table loading={!!!dataSource.length} columns={columns} dataSource={dataSource} />
+    return <Table columns={columns} dataSource={dataSource} />
 }
 
 export default _Table
