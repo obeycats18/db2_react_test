@@ -1,3 +1,13 @@
+Завершил выполнение тестового задания для компании DB2 Limited, которое заключалось в создании приложения для отображении информации по Звездным Воинам.
+Использованный стек:
+ - React.js
+ - Redux (redux-thunk, react-redux)
+ - Ant Design
+ - Axios
+ - Typescript
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
