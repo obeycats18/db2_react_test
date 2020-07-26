@@ -1,0 +1,14 @@
+.film-item{
+    margin: 0 14px 10px 0;
+}
+.film-card{
+    max-height: 400px;
+    height: 360px;
+}
+
+.ant-card-actions{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

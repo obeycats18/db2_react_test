@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+
+import {Layout} from 'antd';
+import {Tabs, TopBar} from './components'
+
 import './App.css';
 
+import logo from './assets/logo.svg'
+
+const {Header, Footer, Content} = Layout;
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [activeTab, setActiveTab] = useState<string>('0')
+
+    const handleTabChange = (tab:string) => setActiveTab(tab)
+
+    return (
+        <Layout>
+            <Header>
+                <a href="/"><img src={logo} alt="DB2 Limited"/></a>
+            </Header>
+            <Content style={{padding: '20px 50px'}}>
+                <TopBar activeKey={activeTab}/>
+                <Tabs handleTabChange={handleTabChange}/>
+            </Content>
+            <Footer>Powered by kapishdima@gmail.com</Footer>
+        </Layout>
+    );
 }
 
 export default App;
